@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #334756;
+}
+nav{
+  background: #F0A500;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+a{
+  display:  inline-block;
+  margin:auto 20px;
+  padding:20px 0;
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+nav a:hover{
+opacity: 1;
+background: white;
+color: black;
+padding: 15px 5px;
+transform: scale(1.5)rotate(5deg)translateX(5px);
+
+}
+.linija{
+  width: 100%;
+  height: 10px;
+  background: white;
+  margin-top: 500px;
+
+}
+
+
+.ball{
+  background: black;
+  margin: 5px auto;
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: bouncing;
+
+  animation: bouncing 6s ease-in ;
+  animation-iteration-count: infinite;
+
+
+}
+@keyframes bouncing {
+  0% {
+    transform: translateY(0px);
+
+  }
+
+  5% {
+      transform: translateY(100px)
+     scaleX(0.8);
+  }
+
+  10% {
+    transform: translateY(500px) scaleX(0.5);
+      }
+  11% {
+    transform: translateY(510px)
+scaleY(0.8);
+
+      }
+  15% {
+    transform: translateY(300px)
+scaleX(0.8);
+      }
+  16% {
+    transform: translateY(200px);
+
+      ;}
+  20% {
+    transform: translateY(500px);
+
+      ;}
+      21% {
+        transform: translateY(510px)
+    scaleY(0.8);
+
+          }
+  25% {
+    transform: translateY(300px);
+
+      }
+  32% {
+    transform: translateY(500px);
+
+      }
+      34% {
+        transform: translateY(510px)
+    scaleY(0.8);
+
+          }
+  40% {
+    transform: translateY(450px);
+
+      }
+  45% {
+    transform: translateY(500px);
+}
+46% {
+  transform: translateY(510px)
+scaleY(0.8);
+
+    }
+  50% {
+    transform: translateY(500px);
+
+      }
+  80% {
+    transform: translateY(550px)
+    scale(0, 0);
+
+
+      }
+  100% {
+    transform: translateY(0px)
+    scale(0, 0);
+
+
+      }
+
+
+
+
+}
